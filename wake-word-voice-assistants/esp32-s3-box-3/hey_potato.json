@@ -1,0 +1,12 @@
+{
+    "type": "micro",
+    "wake_word": "hey potato",
+    "author": "fwartner",
+    "model": "hey_potato.tflite",
+    "trained_languages": [
+        "en"
+    ],
+    "version": 1,
+    "probability_cutoff": 0.5,
+    "sliding_window_size": 10
+}
