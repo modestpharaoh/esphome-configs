@@ -1,0 +1,27 @@
+# ESPHome build directory
+.esphome/
+
+# ESPHome secrets file
+# Warning: DO NOT commit this file to a public repository
+secrets.yaml
+
+# Compiled firmware binaries
+*.bin
+
+# Python artifacts
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.swp
+*~
+.pio/
+.pioenvs/
