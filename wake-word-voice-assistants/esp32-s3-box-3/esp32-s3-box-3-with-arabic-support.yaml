@@ -235,11 +235,14 @@ media_player:
 micro_wake_word:
   id: mww
   models:
-    # - model: okay_nabu
-    # - model: hey_mycroft
-    # - model: hey_jarvis
-    # - model: alexa
-    - model: https://github.com/modestpharaoh/esphome-configs/wake-word-voice-assistants/esp32-s3-box-3/hey_potato.json
+    - model: okay_nabu
+      probability_cutoff: 0.8
+    - model: hey_mycroft
+      probability_cutoff: 0.85
+    - model: hey_jarvis
+      probability_cutoff: 0.85
+    - model: alexa
+      probability_cutoff: 0.85
   on_wake_word_detected:
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
